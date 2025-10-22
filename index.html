@@ -228,6 +228,29 @@ classifier confidence to drop, as in Vlachos (2008).
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
 </script>
+
+  <! ############# Adding a change colour button #############>
+    
+    <button id="colorButton"> Click to change colour</button>
+
+    <script>
+      // Get a reference to the button element
+      var button = document.getElementById("colorButton");
+
+      // Function to change the button colour
+      function changeColor() {
+        // Generate a random colour (hexadecimal)
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      
+      // Set the button's background color to the random color
+      button.style.backgroundColor = randomColor;
+      }
+
+      // Add a click event listener to the button
+      button.add.EventListener("click",changeColor);
+    </script>
+    
+    
     
   </body>
 
