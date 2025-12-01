@@ -52,7 +52,12 @@
       p {text-align: center;}
       pre {text-align: center;}
     </style>
-    
+
+    <!CSS for dropdown arrow and cleaner page>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   </head>
 
 
@@ -132,21 +137,19 @@
       </tr>
 
       <tr>
-        <td> </td>
-      </tr>
-
-      <tr>
-        <td><b><a href="#Birth">  Birth</b></td>
+        <td>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" href="#Analysis">Analysis
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#Birth">Birth</a></li>
+              <li><a href="#MolecularClouds">Molecular Dust Clouds</a></li>
+              <li><a href="#Protostar">Protostar</a></li>
+            </ul>
+          </div>
+        </td>
       </tr>
       
-      <tr>
-        <td><a href="#MolecularClouds">    Molecular Dust Clouds</td>
-      </tr>
-
-      <tr>
-        <td><a href="#Protostar">    Protostar</td>
-      </tr>
-
       <tr>
         <td><b><a href="#MainSequence">  Main Sequence</b></td>
       </tr>
@@ -236,7 +239,7 @@ So, how did these stars form?
       
     <hr>
 
-    <h2 style="font-family:verdana;">Analysis and Discussion</h2>
+    <h2 id="Analysis" style="font-family:verdana;">Analysis and Discussion</h2>
     <div id="Analysis_InText" class="content-section">
     
 <hr>
